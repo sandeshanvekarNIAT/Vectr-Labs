@@ -55,9 +55,9 @@ const itemVariants = {
 export function Services() {
     return (
         <section id="services" className="py-24 relative overflow-hidden">
-            {/* Background Gradient Mesh */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted/20 -z-10" />
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[400px] bg-primary/5 blur-[120px] rounded-full -z-10" />
+            {/* Background Gradient Mesh - transparent to show canvas */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-muted/20 -z-10" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[400px] bg-primary/5 blur-3xl rounded-full -z-10" />
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <motion.div

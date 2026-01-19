@@ -2,12 +2,14 @@ import { Resend } from 'resend';
 import { ContactEmail } from '@/components/emails/ContactTemplate';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY
+    ? new Resend(process.env.RESEND_API_KEY)
+    : null;
 
 export async function POST(req: Request) {
     console.log("API Route /api/send hit");
 
-    if (!process.env.RESEND_API_KEY) {
+    if (!process.env.RESEND_API_KEY || !resend) {
         console.error("RESEND_API_KEY is not defined in environment variables");
         return NextResponse.json({ error: "Server configuration error (API Key missing)" }, { status: 500 });
     }

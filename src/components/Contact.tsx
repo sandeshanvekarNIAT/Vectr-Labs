@@ -12,7 +12,7 @@ export function Contact() {
 
     return (
         <>
-            <section id="contact" className="py-24 bg-background/20 backdrop-blur-md backdrop-saturate-150 border-y border-white/10 shadow-sm relative overflow-hidden">
+            <section id="contact" className="py-24 bg-background/20 border-y border-white/10 shadow-sm relative overflow-hidden">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
