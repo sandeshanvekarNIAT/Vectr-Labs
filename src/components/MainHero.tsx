@@ -37,9 +37,9 @@ export function MainHero() {
                         </div>
                     </div>
 
-                    <h1 className="mt-12 text-2xl md:text-3xl font-bold font-syne tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out fill-mode-forwards">
+                    <h2 className="mt-12 text-2xl md:text-3xl font-bold font-syne tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 ease-out fill-mode-forwards">
                         Modern web development studio
-                    </h1>
+                    </h2>
 
                     <p className="mx-auto mb-16 mt-6 max-w-2xl px-6 text-base font-lexend text-muted-foreground sm:px-6 md:max-w-4xl md:px-20 lg:text-lg animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 ease-out fill-mode-forwards">
                         We build clean, high-performing, and conversion-driven websites for businesses worldwide.
